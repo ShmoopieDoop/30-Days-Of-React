@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Day 2</title>
+    <style>
+        footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+</head>
+<body>
+    <div class="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.querySelector('.root');
+
+        const myName = <h1>Tom Malhi</h1>;
+
+        const footer = <footer>
+            <div className="footer-wrapper">
+            this is mine don't steal
+            </div>
+            </footer>;
+        
+        const myInfo = <div>
+            {myName}
+            <p>Israel
+            etc.</p>    
+            {footer}
+        </div>
+
+        ReactDOM.render(myInfo, rootElement);
+    </script>
+</body>
+</html>
