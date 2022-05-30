@@ -1,0 +1,25 @@
+const skills = [
+  "HTML",
+  "CSS",
+  "Sass",
+  "JS",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+  "Python",
+  "Flask",
+  "Django",
+  "NumPy",
+  "Pandas",
+  "Data Analysis",
+  "MY SQL",
+  "GraphQL",
+  "D3.js",
+  "Gastby",
+  "Docker",
+  "Heroku",
+  "Git",
+];
+
+export default skills;
